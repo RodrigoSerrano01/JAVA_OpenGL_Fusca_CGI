@@ -4,13 +4,10 @@ import TrabalhoFinal.Elemento.Elemento;
 import com.jogamp.opengl.GL2;
 
 public abstract class Rodas extends Elemento {
-
-
-
     public static void cria(GL2 gl) {
 
         gl.glTranslated(-0.4f, 0.05f, 0.0f);
-        gl.glScaled(0.7f,0.7f,0.0);
+        gl.glScaled(0.7f, 0.7f, 0.0);
         gl.glColor3f(0.5f, 0.5f, 0.5f); //set pen color to black
         gl.glBegin(GL2.GL_POLYGON);
 
@@ -27,7 +24,7 @@ public abstract class Rodas extends Elemento {
         gl.glLoadIdentity();
 
         gl.glTranslated(0.2f, 0.05f, 0.0f);
-        gl.glScaled(0.7f,0.7f,0.0);
+        gl.glScaled(0.7f, 0.7f, 0.0);
         gl.glColor3f(0.5f, 0.5f, 0.5f); //set pen color to black
         gl.glBegin(GL2.GL_POLYGON);
 
@@ -42,11 +39,9 @@ public abstract class Rodas extends Elemento {
 
         gl.glEnd();
         gl.glLoadIdentity();
-
-
 
         gl.glTranslated(-0.4f, 0.05f, 0.0f);
-        gl.glScaled(0.5f,0.5f,0.0);
+        gl.glScaled(0.5f, 0.5f, 0.0);
         gl.glColor3f(1.5f, 1.5f, 1.5f); //set pen color to black
         gl.glBegin(GL2.GL_POLYGON);
 
@@ -63,7 +58,7 @@ public abstract class Rodas extends Elemento {
         gl.glLoadIdentity();
 
         gl.glTranslated(0.2f, 0.05f, 0.0f);
-        gl.glScaled(0.5f,0.5f,0.0);
+        gl.glScaled(0.5f, 0.5f, 0.0);
         gl.glColor3f(1.5f, 1.5f, 1.5f); //set pen color to black
         gl.glBegin(GL2.GL_POLYGON);
 
@@ -80,5 +75,5 @@ public abstract class Rodas extends Elemento {
         gl.glLoadIdentity();
 
     }
-    }
+}
 

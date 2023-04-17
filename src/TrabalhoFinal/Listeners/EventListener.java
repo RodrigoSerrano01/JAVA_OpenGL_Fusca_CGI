@@ -16,14 +16,12 @@ import static java.lang.Math.*;
 
 public class EventListener implements GLEventListener {
 
-
     GL2 gl;
     List<Elemento> list;
     @Override
     public void init(GLAutoDrawable drawable) {
         gl = drawable.getGL().getGL2();
         this.gl.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT );
-
     }
 
     @Override
@@ -31,24 +29,16 @@ public class EventListener implements GLEventListener {
 
     }
 
-
     @Override
     public void display(GLAutoDrawable drawable) {
-
-
-
         Carroceria.cria(gl);
         Rodas.cria(gl);
         Vidros.cria(gl);
-
-
     }
 
     @Override
     public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) {
-
         GL2 gl = drawable.getGL().getGL2();
         gl.glViewport(0, 0, width, height);
-
     }
 }

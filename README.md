@@ -1,6 +1,29 @@
- # N1CGI_Fusca
+# Projeto Prático  N1CGI_Fusca
 Aplicação que gera um fusca com computação grafica, usando OPENGL e Jogamp.
 
-
+### Disciplina: Computação Gráfica e Processamento de Imagens
+#### Prof. Adriana Neves dos Reis
 
 ![image](https://user-images.githubusercontent.com/76639465/231906922-f7a727d7-ac13-46cc-84d4-0c4fe339b6f9.png)
+
+Faça uma aplicação que desenhe na tela uma imagem composta por pelo menos:
+- 4 objetos do tipo triângulo, todos tendo como origem um único triângulo;
+- 4 objetos do tipo quadrilátero, todos tendo como origem um único quadrilátero;
+
+A partir do objeto origem, os demais devem ser resultantes de transformações
+geométricas. Sua aplicação deve fazer uso de transformações do tipo: translação, escala
+e rotação.
+
+Os objetos origem e as transformações podem ser informadas à aplicação por um
+arquivo texto, mas não é obrigatório.
+
+A imagem gerada não deve ser abstrata.
+
+Abuse da criatividade, cores, objetos adicionais e outros recursos de Computação
+Gráfica.
+
+Por fim, gere um relatório com a documentação da aplicação construída, incluindo
+também o código e “prints” da aplicação. A documentação deve possuir também
+explicações teóricas das técnicas de computação gráfica.
+
+Na apresentação oral para a turma, todos os integrantes da equipe devem participar.
