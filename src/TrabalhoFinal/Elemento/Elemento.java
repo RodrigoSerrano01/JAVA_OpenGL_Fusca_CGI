@@ -11,7 +11,6 @@ public abstract class Elemento {
 
     protected static double angleIncrement;
 
-
     public Elemento() {
 
     }
