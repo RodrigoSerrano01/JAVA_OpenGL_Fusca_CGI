@@ -13,9 +13,15 @@ import java.awt.*;
 public class Render extends JFrame {
 
     private static GLWindow window;
+    public static int altura= 620, largura= 480;
+
+
 
 
     public static void init(){
+
+
+
 
 
         GLProfile.initSingleton();
@@ -24,7 +30,7 @@ public class Render extends JFrame {
         // MovimentaTriangulo mv= new MovimentaTriangulo(window);
         window = GLWindow.create(caps);
 
-        window.setSize(620, 480);
+        window.setSize(altura, largura);
 
 
 
