@@ -2,20 +2,14 @@ package TrabalhoFinal.Listeners;
 
 import TrabalhoFinal.Elemento.Cenario;
 import TrabalhoFinal.Elemento.Elemento;
-import TrabalhoFinal.Fusca.Carroceria.Carroceria;
+import TrabalhoFinal.Elemento.Formas.Circulo;
+import TrabalhoFinal.Elemento.Formas.GerarFormasNaTela;
+import TrabalhoFinal.Elemento.Formas.Quadrado;
 import TrabalhoFinal.Fusca.Rodas.Rodas;
-import TrabalhoFinal.Fusca.Vidros.Vidros;
 import com.jogamp.opengl.*;
-import com.jogamp.opengl.fixedfunc.GLMatrixFunc;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import static TrabalhoFinal.Application.Render.altura;
-import static TrabalhoFinal.Application.Render.largura;
-import static java.lang.Math.*;
 
 public class EventListener implements GLEventListener {
 
@@ -26,11 +20,10 @@ public class EventListener implements GLEventListener {
     public void init(GLAutoDrawable drawable) {
         gl = drawable.getGL().getGL2();
         this.gl.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT );
+        //gl.glLoadIdentity();
 
         // Configura a matriz de projeção
-        gl.glMatrixMode(GL2.GL_PROJECTION);
-        gl.glLoadIdentity();
-        gl.glOrtho(-largura/2, largura/2, -altura/2, altura/2, -1.0, 1.0);
+        //gl.glMatrixMode(GL2.GL_PROJECTION);
 
 
     }
@@ -39,39 +32,54 @@ public class EventListener implements GLEventListener {
     public void dispose(GLAutoDrawable drawable) {
 
     }
-//
-//    private void desenharObjeto(float[] vertices, float[] escala, float[] translacao, float rotacao) {
-//        // Salva a matriz atual
-//        gl.glPushMatrix();
-//
-//        // Aplica as transformações geométricas
-//        gl.glTranslatef(translacao[0], translacao[1], 0.0f);
-//        gl.glRotatef(rotacao, 0.0f, 0.0f, 1.0f);
-//        gl.glScalef(escala[0], escala[1], escala[2]);
-//
-//        // Desenha o objeto
-//        gl.glBegin(GL2.GL_TRIANGLES);
-//        gl.glColor3f(1.0f, 0.0f, 0.0f);
-//        gl.glVertex2f(vertices[0], vertices[1]);
-//        gl.glVertex2f(vertices[2], vertices[3]);
-//        gl.glVertex2f(vertices[4], vertices[5]);
-//
-//        gl.glEnd();
-//        gl.glLoadIdentity();
-//
-//        // Restaura a matriz original
-//        gl.glPopMatrix();
-//    }
 
 
     @Override
     public void display(GLAutoDrawable drawable) {
 
 
-        Cenario.cria(gl);
-        Carroceria.cria(gl);
-        Rodas.cria(gl);
-        Vidros.cria(gl);
+       // Cenario.cria(gl);
+//        Carroceria.cria(gl);
+       // Rodas.cria(gl);
+//        Vidros.cria(gl);
+
+
+
+        Quadrado q = new Quadrado(
+                -0.5f,0.5f,
+                0.5f,0.5f,
+                0.5f,-0.5f,
+                -0.5f,-0.5f
+        );
+
+
+        Circulo c = new Circulo(100,0.2);
+//
+        GerarFormasNaTela g = new GerarFormasNaTela();
+
+        g.gerarCirculo(c,gl,1);
+
+
+       // gl.glTranslated(-0.4f, 0.05f, 0.0f);
+        //gl.glScaled(0.7f,0.7f,0.0);
+        gl.glColor3f(0.5f, 0.5f, 0.5f); //set pen color to black
+        gl.glBegin(GL2.GL_POLYGON);
+        int numVertices = 200;
+        double angle = 0, radius = 0.2;
+        double angleIncrement = 2 * Math.PI / numVertices;
+        System.out.println(angleIncrement);
+        for (int i = 0; i < numVertices; i++) {
+            angle = i * angleIncrement;
+            double x = radius * Math.cos(angle);
+            double y = radius * Math.sin(angle);
+            gl.glVertex2d(x, y);
+        }
+
+//
+       // g.gerarQuadrado(q,gl);
+
+        gl.glEnd();
+        gl.glLoadIdentity();
 
 
 
@@ -87,3 +95,9 @@ public class EventListener implements GLEventListener {
 
     }
 }
+
+//
+//90,0,0,90,
+//        0.65f,0.8f,0.0f,
+//        0.3f,0.02f,0.0f,
+//        1.5f,1.5f,0.5f,
