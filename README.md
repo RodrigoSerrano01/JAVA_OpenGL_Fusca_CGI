@@ -19,7 +19,7 @@ Abaixo a descrição do exercicio:
 ### Disciplina: Computação Gráfica e Processamento de Imagens
 #### Prof. Adriana Neves dos Reis
 
-![image](https://user-images.githubusercontent.com/76639465/231906922-f7a727d7-ac13-46cc-84d4-0c4fe339b6f9.png)
+![image](https://user-images.githubusercontent.com/76639465/232942836-44d95bad-c27f-4096-932f-b034136dc215.png)
 
 Faça uma aplicação que desenhe na tela uma imagem composta por pelo menos:
 - 4 objetos do tipo triângulo, todos tendo como origem um único triângulo;
