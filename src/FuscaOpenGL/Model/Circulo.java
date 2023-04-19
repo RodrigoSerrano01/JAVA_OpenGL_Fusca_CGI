@@ -1,6 +1,6 @@
-package TrabalhoFinal.Elemento.Formas;
+package FuscaOpenGL.Model;
 
-public class Circulo {
+public class Circulo  extends Formas{
 
 
     private double angle;
@@ -9,11 +9,14 @@ public class Circulo {
 
     private double radius;
 
-    public Circulo( int numVertices, double radius) {
+
+
+    public Circulo(float rotatedAngle, float rotatedX, float rotatedY, float rotatedZ, float transLatedX, float transLatedY, float transLatedZ, float scaledX, float scaledY, float scaledZ, float colorR, float colorG, float colorB) {
+        super(rotatedAngle, rotatedX, rotatedY, rotatedZ, transLatedX, transLatedY, transLatedZ, scaledX, scaledY, scaledZ, colorR, colorG, colorB);
         this.angle = 0;
         this.angleIncrement = 0;
-        this.numVertices = numVertices;
-        this.radius = radius;
+        this.numVertices = 200;
+        this.radius = 0.2;
     }
 
     public double getAngle() {
@@ -47,4 +50,6 @@ public class Circulo {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+
 }

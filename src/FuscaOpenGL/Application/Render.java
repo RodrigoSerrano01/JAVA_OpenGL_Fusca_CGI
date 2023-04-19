@@ -1,14 +1,12 @@
-package TrabalhoFinal.Application;
+package FuscaOpenGL.Application;
 
-import TrabalhoFinal.Listeners.EventListener;
+import FuscaOpenGL.Listeners.EventListener;
 import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
-import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.util.FPSAnimator;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Render extends JFrame {
 

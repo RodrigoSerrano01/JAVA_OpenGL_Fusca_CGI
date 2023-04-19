@@ -1,7 +1,6 @@
-package TrabalhoFinal.Elemento.Formas;
+package FuscaOpenGL.Model;
 
-public class FormasService {
-
+public abstract class Formas {
 
     private float rotatedAngle, rotatedX, rotatedY, rotatedZ;
     private float transLatedX,transLatedY, transLatedZ;
@@ -10,8 +9,21 @@ public class FormasService {
 
     private float colorR, colorG, colorB;
 
-
-
+    public Formas(float rotatedAngle, float rotatedX, float rotatedY, float rotatedZ, float transLatedX, float transLatedY, float transLatedZ, float scaledX, float scaledY, float scaledZ, float colorR, float colorG, float colorB) {
+        this.rotatedAngle = rotatedAngle;
+        this.rotatedX = rotatedX;
+        this.rotatedY = rotatedY;
+        this.rotatedZ = rotatedZ;
+        this.transLatedX = transLatedX;
+        this.transLatedY = transLatedY;
+        this.transLatedZ = transLatedZ;
+        this.scaledX = scaledX;
+        this.scaledY = scaledY;
+        this.scaledZ = scaledZ;
+        this.colorR = colorR;
+        this.colorG = colorG;
+        this.colorB = colorB;
+    }
 
     public float getRotatedAngle() {
         return rotatedAngle;

@@ -1,6 +1,6 @@
-package TrabalhoFinal.Elemento.Formas;
+package FuscaOpenGL.Model;
 
-public class Quadrado implements Formas{
+public class Quadrado extends Formas{
 
 
     private float vertexA1;
@@ -16,16 +16,20 @@ public class Quadrado implements Formas{
 
     private float vertexD2;
 
-    public Quadrado(float vertexA1, float vertexA2, float vertexB1, float vertexB2, float vertexC1, float vertexC2, float vertexD1, float vertexD2) {
-        this.vertexA1 = vertexA1;
-        this.vertexA2 = vertexA2;
-        this.vertexB1 = vertexB1;
-        this.vertexB2 = vertexB2;
-        this.vertexC1 = vertexC1;
-        this.vertexC2 = vertexC2;
-        this.vertexD1 = vertexD1;
-        this.vertexD2 = vertexD2;
+
+    public Quadrado(float rotatedAngle, float rotatedX, float rotatedY, float rotatedZ, float transLatedX, float transLatedY, float transLatedZ, float scaledX, float scaledY, float scaledZ, float colorR, float colorG, float colorB) {
+        super(rotatedAngle, rotatedX, rotatedY, rotatedZ, transLatedX, transLatedY, transLatedZ, scaledX, scaledY, scaledZ, colorR, colorG, colorB);
+        this.vertexA1 = -0.5f;
+        this.vertexA2 = 0.5f;
+        this.vertexB1 = 0.5f;
+        this.vertexB2 = 0.5f;
+        this.vertexC1 = 0.5f;
+        this.vertexC2 = -0.5f;
+        this.vertexD1 = -0.5f;
+        this.vertexD2 = -0.5f;
     }
+
+
 
     public float getVertexA1() {
         return vertexA1;
