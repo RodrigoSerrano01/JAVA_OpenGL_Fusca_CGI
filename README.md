@@ -1,4 +1,4 @@
-# Projeto Prático  N1CGI_Fusca
+# Projeto JAVA_OpenGL_Fusca_CGI
 Aplicação que gera um fusca com computação grafica, usando a biblioteca Jogamp para o OpenGL.
 
 Projeto construiu uma imagem somente com as formas primitivas, decidimos por fazer a silhueta de um fusca.
@@ -8,7 +8,7 @@ Logo após percebemos a necessidade de adicionar um cenario a imagem, e assim fo
 
 
 Video de apresentação do trabalho:
-https://youtu.be/_kzGeg_oqmw
+#https://youtu.be/_kzGeg_oqmw
 
 
 
