@@ -7,8 +7,8 @@ Logo após percebemos a necessidade de adicionar um cenario a imagem, e assim fo
 
 
 
-Video de apresentação do trabalho:
-#https://youtu.be/_kzGeg_oqmw
+#Video de apresentação do trabalho:
+https://youtu.be/_kzGeg_oqmw
 
 
 
