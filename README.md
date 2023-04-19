@@ -5,7 +5,16 @@ Projeto construiu uma imagem somente com as formas primitivas, decidimos por faz
 Logo após percebemos a necessidade de adicionar um cenario a imagem, e assim foi gerado.
 
 
+
+
+Video de apresentação do trabalho:
+https://youtu.be/_kzGeg_oqmw
+
+
+
 Abaixo a descrição do exercicio:
+
+
 
 ### Disciplina: Computação Gráfica e Processamento de Imagens
 #### Prof. Adriana Neves dos Reis
