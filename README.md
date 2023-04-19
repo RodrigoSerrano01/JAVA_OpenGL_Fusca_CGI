@@ -1,6 +1,12 @@
 # Projeto Prático  N1CGI_Fusca
 Aplicação que gera um fusca com computação grafica, usando a biblioteca Jogamp para o OpenGL.
 
+Projeto construiu uma imagem somente com as formas primitivas, decidimos por fazer a silhueta de um fusca.
+Logo após percebemos a necessidade de adicionar um cenario a imagem, e assim foi gerado.
+
+
+- Abaixo a descrição do exercicio:
+
 ### Disciplina: Computação Gráfica e Processamento de Imagens
 #### Prof. Adriana Neves dos Reis
 
